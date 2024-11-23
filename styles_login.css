@@ -1,0 +1,83 @@
+/* Form Container */
+.form-container {
+    width: 100%;
+    max-width: 500px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Tabs */
+  .form-header {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 1rem;
+  }
+  
+  .form-header button {
+    background-color: #003566;
+    color: #fff;
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: bold;
+    flex: 1;
+    text-align: center;
+  }
+  
+  .form-header button.active {
+    background-color: #00509e;
+  }
+  
+  .form-content {
+    display: none;
+  }
+  
+  .form-content.active {
+    display: block;
+  }
+  
+  label {
+    display: block;
+    margin-top: 0.5rem;
+  }
+  
+  input,
+  select {
+    width: 100%;
+    padding: 0.5rem;
+    margin-top: 0.2rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  button.btn {
+    width: 100%;
+    padding: 0.8rem;
+    background-color: #003566;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+  }
+  
+  button.btn:hover {
+    background-color: #00509e;
+  }
+  
+  fieldset {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 1rem;
+    margin-bottom: 1rem;
+  }
+  
+  legend {
+    font-weight: bold;
+    color: #003566;
+  }

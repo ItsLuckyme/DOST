@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login/Register</title>
+  <link rel="stylesheet" href="styles_login.css">
+</head>
+<body>
+  <div class="form-container">
+    <!-- Tabs for Login and Registration -->
+    <div class="form-header">
+      <button id="login-tab" class="active" onclick="showForm('login')">Login</button>
+      <button id="register-tab" onclick="showForm('register')">Register</button>
+    </div>
+
+    <!-- Login Form -->
+    <form id="login-form" class="form-content active">
+      <h2>Login</h2>
+      <label for="email">Email Address:</label>
+      <input type="email" id="login-email" placeholder="Enter your email" required>
+      <label for="password">Password:</label>
+      <input type="password" id="login-password" placeholder="Enter your password" required>
+      <button type="submit" class="btn">Login</button>
+    </form>
+
+    <!-- Registration Form -->
+    <form id="register-form" class="form-content">
+      <h2>Register</h2>
+      <fieldset>
+        <legend>Basic Personal Information</legend>
+        <label for="fname">First Name:</label>
+        <input type="text" id="fname" placeholder="Enter your first name" required>
+        <label for="mname">Middle Initial:</label>
+        <input type="text" id="mname" placeholder="Enter your middle initial">
+        <label for="lname">Last Name:</label>
+        <input type="text" id="lname" placeholder="Enter your last name" required>
+        <label for="suffix">Suffix:</label>
+        <input type="text" id="suffix" placeholder="Jr, Sr, etc.">
+        <label for="gender">Gender:</label>
+        <select id="gender" required>
+          <option value="Male">Male</option>
+          <option value="Female">Female</option>
+        </select>
+        <label for="email">Email Address:</label>
+        <input type="email" id="reg-email" placeholder="Enter your email" required>
+        <label for="mobile">Mobile Number:</label>
+        <input type="tel" id="mobile" placeholder="Enter your mobile number" required>
+      </fieldset>
+
+      <fieldset>
+        <legend>Affiliation</legend>
+        <label for="institution">Primary Institution:</label>
+        <select id="institution" required>
+          <option value="Abra State Insitute of Science and Technology">Abra State Institute of Science and Technology</option>
+          <option value="Apayao State College">Apayao State College</option>
+          <option value="Benguet State University">Benguet State University</option>
+          <option value="Ifugao State University">Ifugao State University</option>
+          <option value="Kalinga State University">Kalinga State University</option>
+          <option value="Mountain Province State University">Mountain Province State University</option>
+          <option value="University of the Philippines-Baguio">University of the Philippines-Baguio</option>
+          <option value="University of Baguio">University of Baguio</option>
+          <option value="University of Cordillera">University of Cordillera</option>
+          <option value="Saint Louis University">Saint Louis University</option>
+          <option value="Pines City Colleges">Pines City Colleges</option>
+          <option value="Easter College Inc.">Easter College Inc.</option>
+          <option value="Baguio Central University">Baguio Central University</option>
+          <option value="Agricultural Training Insitute-CAR">Agricultural Training Insitute-CAR</option>
+          <option value="Commission on Higher Education-CAR">Commission on Higher Education-CAR</option>
+          <option value="Department of Science and Technology-CAR">Department of Science and Technology-CAR</option>
+          <option value="Department of Agriculture-CAR">Department of Agriculture-CAR</option>
+          <option value="Department of Environment and Natural Resources-CAR">Department of Environment and Natural Resources-CAR</option>
+          <option value="Department of Education-CAR">Department of Education-CAR</option>
+          
+          <!-- Add other institutions as needed -->
+        </select>
+        <label for="position">Position:</label>
+        <input type="text" id="position" placeholder="Enter your position" required>
+        <label for="employment-status">Employment Status:</label>
+        <select id="employment-status" required>
+          <option value="Permanent">Permanent</option>
+          <option value="Contract of Service">Contract of Service</option>
+        </select>
+        <label for="field">Field of S&T:</label>
+        <select id="field" required>
+          <option value="Natural Sciences">Natural Sciences</option>
+          <option value="Engineering and Technology">Engineering and Technology</option>
+          <option value="Medical and Health Sciences">Medical and Health Sciences</option>
+          <option value="Agricultural Sciences">Agricultural Sciences</option>
+          <option value="Social Sciences">Social Sciences</option>
+          <option value="Humanity">Humanity</option>
+          <!-- Add other fields as needed -->
+        </select>
+        <label for="course">Primary Course / Specialization:</label>
+        <select id="course" required>
+          <option value="Medical and Health Sciences">Medical and Health Sciences</option>
+          <option value="Engineering and Technology">Engineering and Technology</option>
+          <option value="Business and Management">Business and Management</option>
+          <option value="Social Science and Humanities">Social Science and Humanities</option>
+          <option value="Natural Sciences">Natural Sciences</option>
+          <option value="Agriculture and Related Fields">Agriculture and Related Fields</option>
+          <option value="Arts and Designs">Arts and Designs</option>
+          <option value="Law and Legal Studies">Law and Legal Studies</option>
+          <option value="Education and Teaching">Education and Teaching</option>
+          <option value="Communication and Media">Communication and Media</option>
+          <!-- Add other courses as needed -->
+        </select>
+      </fieldset>
+
+      <fieldset>
+        <legend>Account Details</legend>
+        <label for="password">Password:</label>
+        <input type="password" id="password" placeholder="Enter your password" required>
+        <label for="confirm-password">Confirm Password:</label>
+        <input type="password" id="confirm-password" placeholder="Confirm your password" required>
+      </fieldset>
+      <button type="submit" class="btn">Register</button>
+    </form>
+  </div>
+
+  <script src="scripts.js"></script>
+</body>
+</html>
